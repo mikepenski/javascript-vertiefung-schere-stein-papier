@@ -1,0 +1,40 @@
+#score{
+    .inner{
+        position: relative;
+        &:before, &:after{
+            position: absolute;
+            background: #ff4040;
+            width: 3rem;
+            padding: .25rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:before{
+            content: "USER";
+            left: -1.5rem;
+            @media (max-width:798px){
+                left: 0;
+            }
+        
+        }
+        &:after{
+            content: "COMP";
+            right: -1.5rem;
+            @media (max-width:798px){
+                right: 0;
+            }
+        }
+        .current-score{
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            padding: 1rem;
+            @media (max-width: 768px){
+                font-size: 2rem;
+              }
+            > div{
+                padding: 0 .5rem;
+            }
+        }
+    }
+}

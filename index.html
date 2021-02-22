@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stone scissors paper game | SuoerCode Project</title>
+    <script src="assets/js/fontAwesom.js"></script>
+    <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+
+      .win{
+        color: green !important;
+    border: 2px solid green !important;
+      }
+
+      .loose{
+        color: red !important;
+    border: 2px solid red !important;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="game">
+
+        <h1>stone scissors paper game</h1>
+
+        <section id="rounds">
+          <div class="container">
+            <div class="inner border">
+              <div class="title">how many rounds?</div>
+
+                <div class="rounds-selection">
+
+                    <div class="group">
+                        <input type="radio" name="rounds" id="fiveRounds" class="roundInput" value="5" />
+                        <label for="fiveRounds">5</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="radio" name="rounds" id="tenRounds" class="roundInput" value="10" />
+                        <label for="tenRounds">10</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="radio" name="rounds" id="fifteenRounds" class="roundInput" value="15" />
+                        <label for="fifteenRounds">15</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="radio" name="rounds" id="twentyRounds" class="roundInput" value="20" />
+                        <label for="twentyRounds">20</label>
+                    </div>
+
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="score">
+          <div class="container">
+            <div class="inner border">
+
+               <div class="current-score">
+
+                <div class="user">0</div>
+                <div>:</div>
+                <div class="comp">0</div>
+
+               </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="selection">
+          <div class="container">
+
+            <div class="title resultText">Let's play</div>
+
+            <button class="fas fa-hand-rock" id="rock" data-value="rock"></button>
+            <button class="fas fa-hand-paper" id="paper" data-value="paper"></button>
+            <button class="fas fa-hand-scissors" id="scissors" data-value="scissors"></button>
+              
+            <div class="move">Make your move.</div>
+
+            <button class="link" onclick="location.reload();">restart</button>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </body>
+</html>

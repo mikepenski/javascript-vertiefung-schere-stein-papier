@@ -1,0 +1,25 @@
+#rounds{
+    .inner{
+      .title{
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+      padding: 2rem;
+      .rounds-selection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .group{
+          flex: 50%;
+          width: 50%;
+          margin-bottom: 1rem;
+        }
+        &.current-rounds{
+          font-size: 2.5rem;
+          @media (max-width: 768px){
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
