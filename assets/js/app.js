@@ -66,7 +66,7 @@
         //Check for Paper
         if (userChoice === "paper") {
           if (compChoice === "scissors") {
-            resultText.innerHTML =  `${compChoice}<sup>(comp)</sup> beats ${userChoice}<sup>(comp)</sup>. Comp win!`;
+            resultText.innerHTML =  `${compChoice}<sup>(comp)</sup> beats ${userChoice}<sup>(user)</sup>. Comp win!`;
             computerScore++;
             markAsLoose(thisButton);
             updateScore();
@@ -82,7 +82,7 @@
         //Check for Scissors
         if (userChoice === "scissors") {
           if (compChoice === "rock") {
-            resultText.innerHTML =  `${compChoice}<sup>(comp)</sup> beats ${userChoice}<sup>(comp)</sup>. Comp win!`;
+            resultText.innerHTML =  `${compChoice}<sup>(comp)</sup> beats ${userChoice}<sup>(user)</sup>. Comp win!`;
             computerScore++;
             markAsLoose(thisButton);
             updateScore();
